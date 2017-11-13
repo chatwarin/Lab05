@@ -4,17 +4,24 @@ class Program
 {
     static void Main()
     {
-        int val = 999;
-        refMethod(ref val);
-        Console.WriteLine(val);
-        Console.ReadLine();
-    }
+        int x = 6;
+        int y = 4;
 
-    static void refMethod(ref int i)
-    {
-        i = i + 1;
+        Console.WriteLine(y *= 2);
+        int z = y = 3;
+
+        Console.WriteLine(z);
+        Console.WriteLine(x |= 1);
+        Console.WriteLine(x += 3);
+        Console.WriteLine(x /= 2);
     }
 }
+
+
+
+
+
+
 
 
 
