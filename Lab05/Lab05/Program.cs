@@ -1,19 +1,17 @@
 ﻿using System;
 
-class Program
+class TryCatch 
 {
     static void Main()
     {
-        byte a = 3;
-        byte b = 5;
-
-        Console.WriteLine(a | b);
-        Console.WriteLine(a & b);
-        Console.WriteLine(a ^ b);
-        Console.WriteLine(~a & b);
-        Console.WriteLine("{0}", Convert.ToString(a << 1, 2).PadLeft(8, '0'));
-        Console.WriteLine("{0}", Convert.ToString(a << 1, 2).PadLeft(8, '0'));
-        Console.WriteLine("{0}", Convert.ToString(a << 1, 2).PadLeft(8, '0'));
+        double d = 5e9d;
+        try
+        { Console.WriteLine(d); }
+        catch
+        {
+            int i = checked((int)d);
+            Console.WriteLine(i);
+        }
 
     }
 }
