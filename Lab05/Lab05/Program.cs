@@ -1,21 +1,24 @@
 ﻿using System;
-
-class OddOrEven
+class Triangle
 {
-    static void Main(String[] args)
+    static double TriangleArea(double totalW, double h)
     {
-        {
-            int num1; // ประกาศตัวแปรเพื่อเก็บตัวเลข
-            Console.Write("Input 1 : ");
-            num1 = int.Parse(Console.ReadLine());
-            if (num1 % 2 == 0)
-                Console.WriteLine("{0} is Even", num1); //true
-            if (num1 % 2 != 0)
-                Console.WriteLine("{0} is Odd", num1); //true
-        }
+        double area =  h * 0.5 * totalW;
+        return area;
+    }
+
+    static void Main()
+    {
+        Console.Write("Enter width1: ");
+        double width1 = double.Parse(Console.ReadLine());
+        Console.Write("Enter width2: ");
+        double width2 = double.Parse(Console.ReadLine());
+        double totalW = width1 + width2; // ผลรวมของความยาวของด้านคู่ขนาน
+        Console.Write("Enter height: ");
+        double height = double.Parse(Console.ReadLine());
+        Console.WriteLine("The area of the triangle is {0:f2}.", TriangleArea(height,totalW));
     }
 }
-
 
 
 
