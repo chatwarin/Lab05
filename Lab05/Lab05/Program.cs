@@ -4,14 +4,11 @@ class TryCatch
 {
     static void Main()
     {
-        double d = 5e9d;
-        try
-        { Console.WriteLine(d); }
-        catch
-        {
-            int i = checked((int)d);
-            Console.WriteLine(i);
-        }
+        int a = 2;
+        float f = 3.5f;
+        double d = 4.99d;
+        decimal money = 1254841354;
+        Console.WriteLine(a + " " + f + " " + d + " " + money);
 
     }
 }
